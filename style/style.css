@@ -1,0 +1,299 @@
+body {
+      margin: 0;
+      background: white;
+      color: black;
+      font-family: 'Oswald', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* === ШАПКА === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 95%;
+      background: white;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      margin-left: 40px;
+      text-decoration: none;
+      color: black;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    /* === HERO === */
+    .hero {
+      text-align: center;
+      padding-top: 160px;
+      padding-bottom: 60px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Compacta', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 300px;
+      margin: 0;
+      line-height: 1;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+    }
+
+    /* Рисунки вокруг заголовка */
+    .decor {
+      position: absolute;
+      z-index: 1;
+    }
+
+    .decor.top-left {
+      top: 70px;
+      left: 20%;
+      width: 300px;
+    }
+
+    .decor.top-right {
+      top: 60px;
+      right: 20%;
+      width: 108px;
+    }
+
+    .decor.bottom-left {
+      bottom: 200px;
+      left: 25%;
+      width: 120px;
+    }
+
+    .decor.bottom-right {
+      bottom: 220px;
+      right: 25%;
+      width: 156px;
+    }
+
+    .decor.behind-title {
+      top: 48%;
+      left: 60%;
+      transform: translate(-50%, -45%);
+      width: 424px;
+    }
+
+    .hero p {
+      font-size: 28px;
+      margin: 60px auto 0;
+      max-width: 1000px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+    }
+
+    .buttons {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .button-wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .button-decor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      transform: translate(-50%, -50%);
+      transition: transform 0.4s ease;
+      z-index: 1;
+    }
+
+    .button-wrap:hover .button-decor {
+      transform: translate(-50%, -50%) scale(1.1) rotate(5deg);
+    }
+
+    .buttons button {
+      font-family: 'Compacta', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 78px;
+      border: none;
+      background: none;
+      margin: 0 30px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* === СЛАЙДЕР === */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+
+    .slides {
+      display: flex;
+      gap: 30px;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide img {
+      width: 360px;
+      height: 352px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 4px;
+    }
+
+    /* === БУРГЕРЫ === */
+    .burgers {
+      text-align: center;
+      padding: 250px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .burgers h2 {
+      font-family: 'Compacta', sans-serif;
+      font-weight: 300;
+      font-size: 350px;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    #burgerImg {
+      width: 768px;
+      position: absolute;
+      top: calc(70% - 350px);
+      left: 50%;
+      transform: translate(-50%, -40%);
+      z-index: 2;
+      transition: transform 0.3s ease-out;
+    }
+
+    #croImg {
+      width: 700px;
+      position: absolute;
+      top: calc(70% - 350px);
+      left: 50%;
+      transform: translate(-50%, -40%);
+      z-index: 2;
+      transition: transform 0.3s ease-out;
+    }
+
+    .burgers p {
+      font-size: 28px;
+      margin-top: 600px;
+      position: relative;
+      z-index: 3;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      white-space: pre-line;
+      line-height: 1.5;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .burgers button {
+      font-family: 'Compacta', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 78px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin-top: 40px;
+      transition: 0.3s;
+      z-index: 3;
+      position: relative;
+      letter-spacing: 1px;
+    }
+
+    .button-wrap .button-decor-small {
+      width: 380px;
+    }
+    
+    .full-img img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ---------- ПОДВАЛ ---------- */
+.footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 380px;
+  height: 200px;
+  position: relative;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-left h3,
+.footer-right h3 {
+  font-family: 'Compacta';
+  font-weight: 300;
+  font-size: 50px;
+  margin: 0;
+}
+
+.footer-left .address,
+.footer-right .address-right {
+  font-size: 18px;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.footer-left .social,
+.footer-right .social {
+  font-size: 16px;
+  color: #999;
+}
+
+.footer-left .privacy {
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.footer-right {
+  text-align: right;
+}
